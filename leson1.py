@@ -13,8 +13,8 @@
 #1003
 
 #Дано цілі числа x,y . В першому рядку вивести залишок від ділення першого числа на друге, а в другому залишок від ділення другого на перше
-x,y = map(int, input().split())
-res1 = x % y
-res2 = y % x
-print(res1)
-print(res2)
+#x,y = map(int, input().split())
+#res1 = x % y
+#res2 = y % x
+#print(res1)
+#print(res2)

@@ -43,22 +43,34 @@
 #    print("No")
 
 #1022
-a,b,c,d = map(int, input().split())
-min,max = 0,0
-if a>b and a>c and a>d:
-    max = a
-elif b>a and b>c and b>d:
-    max = b
-elif c>a and c>b and c>d:
-    max = c
-elif d>a and d>c and d>c:
-    max = d
-if a<b and a>c and a>d:
-    min = a
-elif b<a and b<c and b>d:
-    min = b
-elif c<a and c<b and c<d:
-    min = c
-elif d<a and d<c and d<c:
-    min = d
-print(min,max)
+#a,b,c,d = map(int, input().split())
+#min,max = 0,0
+#if a>b and a>c and a>d:
+#    max = a
+#elif b>a and b>c and b>d:
+#    max = b
+#elif c>a and c>b and c>d:
+#    max = c
+#elif d>a and d>c and d>c:
+#    max = d
+#if a<b and a>c and a>d:
+#    min = a
+#elif b<a and b<c and b>d:
+#    min = b
+#elif c<a and c<b and c<d:
+#    min = c
+#elif d<a and d<c and d<c:
+#    min = d
+#print(min,max)
+
+from random import randint
+
+lst = [randint(-10, 10) for i in range(20)]
+print(lst)
+
+sum_negative = 0
+
+for num in lst:
+    if num < 0: sum_negative += num
+print ("Sum negative item list: ", sum_negative)
+

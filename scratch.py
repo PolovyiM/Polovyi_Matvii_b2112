@@ -88,3 +88,17 @@ print("Sum of odd item list:", sum_of_odd)
 
 sum_elements_mult_3 = 0
 for i in range(len(lst)):
+    if i % 3 == 0:
+        sum_elements_mult_3 += lst[i]
+print("Sum of elements that are multiples of 3 :", sum_elements_mult_3)
+
+mult_range = 1
+min_value_list = min(lst)
+max_value_list = max(lst)
+index_min = lst.index(min_value_list)
+index_max = lst.index(max_value_list)
+if index_max<index_min:
+    index_max,index_min = index_min,index_max
+for i in range(index_min,index_max,1):
+    mult_range *=lst[i]
+print("Product of elements between the minimum and maximum elements :", mult_range)

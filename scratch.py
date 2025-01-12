@@ -86,5 +86,5 @@ for num in lst:
         sum_of_odd += num
 print("Sum of odd item list:", sum_of_odd)
 
-sum_elements_mult_3 = 0
-for i in range(len(lst)):
+# sum_elements_mult_3 = 0
+# for i in range(len(lst)):
